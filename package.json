@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/dic09005/cse341#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "rest": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
