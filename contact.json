@@ -1,0 +1,23 @@
+{
+    "contact1": {
+        "firstName": "John",
+        "lastName": "Dickson",
+        "email": "john.dickson2012@gmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "09/04/2014"
+      },
+    "contact2": {
+        "firstName": "Colton",
+        "lastName": "Dickson",
+        "email": "colton.dickson2014@gmail.com",
+        "favoriteColor": "Red",
+        "birthday": "11/24/2014"
+      },
+    "contact3": {
+        "firstName": "Asher",
+        "lastName": "Dickson",
+        "email": "asher.dickson2016@gmail.com",
+        "favoriteColor": "Green",
+        "birthday": "11/21/2016"
+      }
+}
