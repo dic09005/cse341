@@ -11,6 +11,6 @@ GET http://localhost:3000/contacts/644b2835483dcd001015e776 HTTP/1.1
 
 
 ###
-GET https://dickson341test.onrender.com HTTP/1.1
+GET https://dickson341test.onrender.com/contacts HTTP/1.1
 
 
