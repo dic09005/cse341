@@ -10,7 +10,7 @@ GET http://localhost:3000/contacts/644b282e483dcd001015e775 HTTP/1.1
 GET http://localhost:3000/contacts/644b2835483dcd001015e776 HTTP/1.1
 
 ### Post is to create new contact
-POST http://localhost:3000/contacts HTTP/1.1 
+POST http://localhost:3000/contacts HTTP/1.1
 Content-Type: application/json
 {
     "firstName": "Larissa",
