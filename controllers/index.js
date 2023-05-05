@@ -33,6 +33,7 @@ const createContact = async (req, res) => {
   } else {
     res.status(500).json(response.error || 'Error occurred while creating contact.');
   }
+  console.log(req.body)
 };
 
 const updateContact = async (req, res) => {
@@ -45,12 +46,12 @@ const updateContact = async (req, res) => {
     birthday: req.body.birthday
   };
   const response = await mongodb.getDb().db('CSE341').collection('contacts').replaceOne({ _id: userId }, contact);
-  console.log(response);
   if (response.modifiedCount > 0) {
     res.status(204).send();
   } else {
     res.status(500).json(response.error || 'Error occurred while updating contact.');
   }
+  console.log(req.body)
 };
 
 const deleteContact = async (req, res) => {
