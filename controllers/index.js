@@ -2,7 +2,7 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
-const getData = async (req, res, next) => {
+const getData = async (req, res) => {
   const result = await mongodb.getDb().db('CSE341').collection('contacts').find(); // On this line spelling plays a major factor... contact vs. contacts 
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -10,7 +10,7 @@ const getData = async (req, res, next) => {
   });
 };
 
-const getObject = async (req, res, next) => {
+const getObject = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db('CSE341').collection('contacts').find({ _id: userId });
   result.toArray().then((lists) => {
@@ -19,7 +19,7 @@ const getObject = async (req, res, next) => {
   });
 };
 
-const createContact = async (req, res, next) => {
+const createContact = async (req, res) => {
   const contact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
@@ -31,11 +31,11 @@ const createContact = async (req, res, next) => {
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
-    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+    res.status(500).json(response.error || 'Error occurred while creating contact.');
   }
 };
 
-const updateContact = async (req, res, next) => {
+const updateContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const contact = {
     firstName: req.body.firstName,
@@ -49,18 +49,18 @@ const updateContact = async (req, res, next) => {
   if (response.modifiedCount > 0) {
     res.status(204).send();
   } else {
-    res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+    res.status(500).json(response.error || 'Error occurred while updating contact.');
   }
 };
 
-const deleteContact = async (req, res, next) => {
+const deleteContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
-  const result = await mongodb.getDb().db('CSE341').collection('contacts').remove({ _id: userId }, true);
+  const response = await mongodb.getDb().db('CSE341').collection('contacts').deleteOne({ _id: userId }, true);
   console.log(response);
-  if (result.deletedCount > 0) {
+  if (response.deletedCount > 0) {
     res.status(204).send();
   } else {
-    res.status(500).json(result.error || 'Error occurred while deleting contact');
+    res.status(500).json(response.error || 'Error occurred while deleting contact');
   }
 };
 
