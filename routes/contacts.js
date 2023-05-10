@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const myController = require('../controllers/')
+const myController = require('../controllers/index')
 
 router.get('/', myController.getData);
 

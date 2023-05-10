@@ -5,10 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server.js",
+    "start": "nodemon server.js",
     "Dev-Start": "nodemon server.js",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "swagger-autogen": "node ./swagger.js"
   },
   "repository": {
     "type": "git",
@@ -23,13 +24,16 @@
   "dependencies": {
     "body-parse": "^0.1.0",
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongodb": "^5.3.0",
-    "rest": "^2.0.0"
+    "rest": "^2.0.0",
+    "swagger-ui-express": "^4.6.3"
   },
   "devDependencies": {
     "eslint": "^8.39.0",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "swagger-autogen": "^2.23.1"
   }
 }
