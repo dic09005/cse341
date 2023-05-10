@@ -5,7 +5,7 @@
     "description": "Contacts API",
     "version": "1.0.0"
   },
-  "host": "https://dickson341test.onrender.com/",
+  "host": "https://dickson341test.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
