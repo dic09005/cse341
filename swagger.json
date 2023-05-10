@@ -8,7 +8,7 @@
   "host": "dickson341test.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
