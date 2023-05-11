@@ -10,13 +10,9 @@ app
   .use(bodyParser.json())
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    // res.setHeader('Access-Control-Allow-Headers', '*');
-    // res.setHeader('Content-Type', 'application/json');
-    // res.setHeader('Access-Control-Allow-Methods', '*');
     next();
   })
-  .use('/', require('./routes')
-  );
+  .use('/', require('./routes'));
 
 mongodb.initDb((err) => {
   if (err) {
