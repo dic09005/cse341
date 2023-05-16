@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "644b282e483dcd001015e775"
+  },
+  "firstName": "Colton",
+  "lastName": "Dickson",
+  "email": "colton.dickson2014@gmail.com",
+  "favoriteColor": "Green",
+  "birthday": "11/24/2014"
+},{
+  "_id": {
+    "$oid": "644b2835483dcd001015e776"
+  },
+  "firstName": "Asher",
+  "lastName": "Dickson",
+  "email": "asher.dickson2016@gmail.com",
+  "favoriteColor": "Green",
+  "birthday": "11/21/2016"
+},{
+  "_id": {
+    "$oid": "64546f7d358db2d5080defad"
+  },
+  "firstName": "Weston",
+  "lastName": "Dickson",
+  "email": "weston.dickson2012@gmail.com",
+  "favoriteColor": "Blue",
+  "birthday": "09/04/2014"
+},{
+  "_id": {
+    "$oid": "645473b0405269722670393b"
+  },
+  "firstName": "Larissa",
+  "lastName": "Dickson",
+  "email": "larissa.dickson@gmail.com",
+  "favoriteColor": "Purple",
+  "birthday": "10/08/1990"
+},{
+  "_id": {
+    "$oid": "645c21cd4ff0fddd78f26eda"
+  },
+  "firstName": "Larry",
+  "lastName": "Stooge",
+  "email": "lstooge@gmail.com",
+  "favoriteColor": "grey",
+  "birthday": "01/01/1922"
+},{
+  "_id": {
+    "$oid": "645c21ea4ff0fddd78f26edb"
+  },
+  "firstName": "Curley",
+  "lastName": "Stooge",
+  "email": "cstooge@gmail.com",
+  "favoriteColor": "grey",
+  "birthday": "01/01/1922"
+},{
+  "_id": {
+    "$oid": "645c21f84ff0fddd78f26edc"
+  },
+  "firstName": "Moe",
+  "lastName": "Stooge",
+  "email": "mstooge@yaho.com",
+  "favoriteColor": "grey",
+  "birthday": "10/10/1982"
+},{
+  "_id": {
+    "$oid": "645c50239ec259b5dd87042b"
+  },
+  "firstName": "Test",
+  "lastName": "ToDelete",
+  "email": "test@gmail.com",
+  "favoriteColor": "Purple",
+  "birthday": "10/10/1990"
+}]
